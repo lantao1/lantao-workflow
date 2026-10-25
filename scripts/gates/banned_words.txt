@@ -1,0 +1,67 @@
+# One entry per line (words or phrases, case-insensitive); a plain entry is gated (error), a leading "~" marks the style list (warning only); "#" starts a comment.
+however
+thus
+moreover
+furthermore
+can
+could
+may
+might
+~just
+~very
+~really
+~literally
+~actually
+~certainly
+~probably
+~basically
+~maybe
+~hence
+~delve
+~embark
+~enlightening
+~esteemed
+~shed light
+~craft
+~crafting
+~imagine
+~realm
+~game-changer
+~unlock
+~discover
+~skyrocket
+~abyss
+~revolutionize
+~disruptive
+~utilize
+~utilizing
+~dive deep
+~tapestry
+~illuminate
+~unveil
+~pivotal
+~intricate
+~elucidate
+~harness
+~exciting
+~groundbreaking
+~cutting-edge
+~remarkable
+~glimpse into
+~navigating
+~landscape
+~stark
+~testament
+~in summary
+~in conclusion
+~boost
+~opened up
+~powerful
+~inquiries
+~ever-evolving
+~仍
+~其实
+~只
+~就是
+~正是如此
+~事先

@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{booktabs}
+% A toy paper for the gate examples. Every number is invented.
+\begin{document}
+
+\section{Data}
+
+The sample holds 12,480 pupils in 416 schools. Section~2 reports the estimates.
+
+\section{Results}
+
+Smaller classes go with higher test scores. In the baseline the coefficient on class size is $-$0.142 (Table~\ref{tab:main}, column (1)). With the instrument it is $-$0.215, significant at the one percent level. A class smaller by five pupils is associated with a score higher by 1.08 points (5 $\times$ 0.2153), about 1.8\% of the mean score.\footnote{The mean score is 61.37 points.}
+% the retired run printed $-$0.207 in the sentence above
+
+With the control variables the instrumented coefficient is $-$0.188, significant at the five percent level. In the baseline, the 95\% confidence interval of the five-pupil score gain is [0.45,\,1.70] points.
+
+\begin{table}[h]
+\centering
+\caption{Class size and test scores}\label{tab:main}
+\input{tables/tab_main}
+\par\footnotesize Standard errors in parentheses.\\% the earlier run reported 12,512 pupils
+Stars: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.
+\end{table}
+
+\end{document}

@@ -1,0 +1,4 @@
+spec,est,term,coef,se,p,kpF,n
+baseline,OLS,class_size,-0.1418,0.0312,0.00001,,12480
+baseline,IV,class_size,-0.2153,0.0641,0.0008,38.42,12480
+controls,IV,class_size,-0.1876,0.0712,0.0213,35.104,12480

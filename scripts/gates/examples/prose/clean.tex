@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+% Example input for prose_audit.py and outline_check.py: a clean draft (invented content).
+\usepackage{amsmath}
+\usepackage{booktabs}
+\title{Irrigation Canals and Farm Yields}
+\author{A. Author}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Districts with more irrigated land report higher grain yields. The association holds in every
+survey year and with district fixed effects.
+\end{abstract}
+
+% however --- a comment is not prose and is never audited.
+Irrigation is the main public input in dryland farming. Governments spend more on canals than on
+any other rural asset. This paper asks how yields move with irrigated area.
+
+\section{Data}
+\label{sec:data}
+
+Yields come from an annual farm survey of U.S. districts.\footnote{The survey samples about
+\textit{one farm in {forty}}. Weights restore the population totals.} The survey reports output
+and planted area for each farm. Dividing output by area gives the yield in tonnes per hectare.
+
+The estimating equation relates the log yield to the irrigated share $s_{dt}$ of district $d$ in
+year $t$:
+\begin{equation}
+\ln y_{dt} = \beta s_{dt} + \alpha_d + \tau_t + \varepsilon_{dt}.
+\label{eq:main}
+\end{equation}
+Here $\alpha_d$ is a district fixed effect, $\tau_t$ a year effect and $\varepsilon_{dt}$ the
+error term.
+
+The sample keeps three kinds of districts:
+\begin{itemize}
+\item districts observed in every survey year;
+\item districts with at least ten sampled farms;
+\item districts whose borders did not change.
+\end{itemize}
+Each restriction removes fewer than five percent of the farms.
+
+\section{Results}
+
+A higher irrigated share goes with higher yields. Table~\ref{tab:main} reports the estimates. The
+estimate is 0.42 with district and year effects, e.g.\ a rise of ten points in the share goes with
+a yield about four percent higher. Rainfall cannot explain the pattern, because the estimate is the
+same in wet and dry years.
+
+\begin{table}[htbp]
+\centering
+\caption{Irrigated share and log yield}
+\label{tab:main}
+\begin{tabular}{lcc}
+\toprule
+ & (1) & (2) \\
+\midrule
+Irrigated share & 0.42 & 0.39 \\
+ & (0.08) & --- \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize \textbf{Notes.} Column (1) includes district and year effects. Standard errors
+are clustered by district.}
+\end{table}
+
+The estimates come from the survey waves of May 2010 to 2020. The data section describes the
+waves in full.
+
+\begin{quote}
+However, as one reviewer wrote --- a quotation is not audited.
+\end{quote}
+
+\section*{References}
+\bibentry Smith, J. 2001. Canals. In \textit{Handbook of Farming}, Chapter 3. However, the
+reference list is not audited.
+\end{document}

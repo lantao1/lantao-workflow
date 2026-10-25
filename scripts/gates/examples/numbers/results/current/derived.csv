@@ -1,0 +1,5 @@
+quantity,value,formula
+gain_five_pupils,1.0765,5 x |baseline IV coef|
+gain_pct_of_mean,1.754,100 x gain_five_pupils / mean_score
+gain_ci_lo,0.4483,5 x (|baseline IV coef| - 1.96 x se)
+gain_ci_hi,1.7047,5 x (|baseline IV coef| + 1.96 x se)

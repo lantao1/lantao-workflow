@@ -1,0 +1,23 @@
+\documentclass{article}
+% Example input for prose_audit.py: one instance of each defect (invented content).
+% Expected: king-and, em-dash (in the footnote), king-length, proposal-leak, manual-register (a
+% data file name), banned "however" (error) and "May" (error, in a heading), number-pointer,
+% banned style word "very" (warning), long-sentence (warning), stray-cjk.
+\begin{document}
+
+\section{Data}
+\label{sec:data}
+
+Station records give daily rainfall for each district, and a satellite product fills the gaps.\footnote{The satellite product starts in 1998 --- earlier years use stations alone.} The two sources agree closely where both exist.
+
+The district panel used throughout this paper covers every district that reported both rainfall and output in each of the twelve survey years between 2008 and 2019.
+The panel is balanced and is saved as panel.dta.
+
+NEW CONTENT: a sentence on how the survey treats missing districts.
+
+\section{How Yields May Respond}
+
+Rainfall goes with higher yields in dry districts. The estimate, however, falls by half once district fixed effects enter the regression. As Section~\ref{sec:data} shows, the rainfall series is complete. The yield measure is very close to the official series.
+
+Yields respond to rainfall with a lag. The lag appears because farmers plant after the first rains, harvest several months later, and report output for the season in which the harvest falls, so a dry spell late in one season lowers the yield recorded for the next season in the survey file. The lagged term is the larger one（中文）.
+\end{document}

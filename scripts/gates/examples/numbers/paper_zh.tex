@@ -1,0 +1,24 @@
+\documentclass{ctexart}
+\usepackage{booktabs}
+% 门控示例用的玩具论文，所有数字均为虚构。
+\begin{document}
+
+\section{数据}
+
+样本包括416所学校的12,480名学生。第2节报告估计结果。
+
+\section{结果}
+
+班级越小，考试成绩越高。基准估计中班级规模的系数为$-$0.142（表~\ref{tab:main}第(1)列）。使用工具变量后系数为$-$0.215，在百分之一水平显著。班级人数少五人，对应的成绩高出1.08分（5 $\times$ 0.2153），约为平均成绩的1.8\%。\footnote{平均成绩为61.37分。}
+% 旧版本在上句中写的是 $-$0.207
+
+加入控制变量后，工具变量估计的系数为$-$0.188，在百分之五水平显著。基准估计中，班级人数少五人对应的成绩增益的95\%置信区间为[0.45, 1.70]分。
+
+\begin{table}[h]
+\centering
+\caption{班级规模与考试成绩}\label{tab:main}
+\input{tables/tab_main}
+\par\footnotesize 括号内为标准误。星号：*** $p<0.01$，** $p<0.05$，* $p<0.10$。
+\end{table}
+
+\end{document}

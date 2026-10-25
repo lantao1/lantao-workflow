@@ -1,0 +1,17 @@
+{
+  "root": ".",
+  "copy": ["paper.tex", "paper_zh.tex", "tables/", "results/", "example_gate.py"],
+  "gates": [
+    {"name": "claims_approved", "cmd": ["{python}", "example_gate.py"], "counts": false},
+    {"name": "claims", "cmd": ["{python}", "example_gate.py", "--loose"]}
+  ],
+  "compare": [["claims_approved", "claims"]],
+  "timeout": 120,
+  "max_mb": 5,
+  "perturbations": [
+    {"label": "IV coefficient changed in the English prose",
+     "file": "paper.tex", "old": "it is $-$0.215,", "new": "it is $-$0.225,"},
+    {"label": "the school count grown into a longer number",
+     "file": "paper.tex", "old": "in 416 schools", "new": "in 1,416 schools"}
+  ]
+}

@@ -1,0 +1,132 @@
+# ==============================================================================
+# .gitignore for Academic Claude Code Projects
+# ==============================================================================
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+*.run.xml
+*-blx.bib
+
+# Compiled PDFs (uncomment to track specific PDFs)
+# *.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Rdata
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code local files (not shared across machines)
+.claude/settings.local.json
+.claude/state/
+CLAUDE.local.md
+
+# IDE
+# .vscode/settings.json ships in the template (carries shipped Claude Code permission-mode
+# recommendations — see TROUBLESHOOTING.md "Permissions / bypass / statusline" for the typo
+# fix forkers need). Other .vscode/ content is developer-machine-specific.
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Quarto rendering artifacts
+.quarto/
+
+# quality_reports/ — per-project session logs, plans, specs, merges, audits,
+# diagnoses. The directory structure ships in the template (via .gitkeep), but
+# the content is PROJECT-INTERNAL and shouldn't be inherited by forks.
+# (diagnoses/ in particular may hold real data values/paths — never ship them;
+#  audits/ are repo-specific gap analyses, noise for a forker.)
+quality_reports/plans/*
+quality_reports/specs/*
+quality_reports/session_logs/*
+quality_reports/merges/*
+quality_reports/decisions/*
+quality_reports/checkpoints/*
+quality_reports/preregistrations/*
+quality_reports/audits/*
+quality_reports/diagnoses/*
+!quality_reports/plans/.gitkeep
+!quality_reports/specs/.gitkeep
+!quality_reports/session_logs/.gitkeep
+!quality_reports/merges/.gitkeep
+!quality_reports/decisions/.gitkeep
+!quality_reports/checkpoints/.gitkeep
+!quality_reports/preregistrations/.gitkeep
+!quality_reports/audits/.gitkeep
+!quality_reports/diagnoses/.gitkeep
+# This file follows the TEMPLATE default (plans and logs stay local). In a
+# working project that commits its records (see the table in
+# .claude/rules/meta-governance.md), track each approved plan or round record
+# with a negation line, e.g. !quality_reports/plans/<date>_<name>.md
+
+# Raw and restricted data: never commit (the folders ship via .gitkeep)
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# Statistical-package data files
+*.dta
+*.sas7bdat
+
+# R analysis outputs (generated artifacts; keep scripts, ignore outputs)
+scripts/R/_outputs/
+
+# Output artifacts — uncomment lines below based on your preference
+# *.rds
+# output/**/*.rds
+
+# Machine-local path config: track a template copy, ignore the real file
+*_local.do
+
+# Disposable build directory (rebuilt from code by the pipeline)
+build/
+
+# Diagnostic rerun output: a diagnostic rerun writes to scratch, is compared
+# against the published outputs, and is never published (docs/LESSONS.md,
+# "Diagnostic reruns and regeneration").
+**/diag_*/
+
+# Self-test and audit mirrors. Build them OUTSIDE the repo (the session
+# scratchpad) and delete them after each round; this pattern only catches a
+# stray so a mirror is never committed.
+*mirror*/
+
+# Extra LaTeX build products (lists of figures and tables)
+*.lof
+*.lot
+
+# Staging area for dropped source PDFs. NEVER committed: it is filled by
+# dragging a Downloads folder in, so it can contain personal documents.
+# Layout-neutral, so it is ignored wherever a project puts it.
+**/_incoming/
+
+# Replication package build output
+dist/
+
+# MS Office lock/temp files
+~$*
