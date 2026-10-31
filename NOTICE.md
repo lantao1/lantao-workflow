@@ -96,6 +96,15 @@ The upstream files keep their own attributions. The `/review-paper --peer` pipel
 [clo-author](https://github.com/hugosantanna/clo-author) with his permission, as the upstream
 README and those files state. This copy does not change them.
 
+## Third-party skills
+
+`.claude/skills/audit-analysis`, `.claude/skills/review-paper-code` and
+`.claude/skills/explain-diff` come from Claes Bäckman's
+[AI-research-feedback](https://github.com/claesbackman/AI-research-feedback) at commit `4c1aef5`,
+used under the MIT License. Each folder keeps his license in its `LICENSE` file.
+`review-paper-code` and `explain-diff` are unchanged. `audit-analysis` is changed in two ways: it
+takes optional paths after the base ref, and it passes untracked code files to the auditor.
+
 ## What this copy leaves out
 
 This copy does not ship the upstream Quarto guide (`guide/`) or its rendered site
