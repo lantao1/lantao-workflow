@@ -101,7 +101,7 @@ README and those files state. This copy does not change them.
 `.claude/skills/audit-analysis`, `.claude/skills/review-paper-code` and
 `.claude/skills/explain-diff` come from Claes Bäckman's
 [AI-research-feedback](https://github.com/claesbackman/AI-research-feedback) at commit `4c1aef5`,
-used under the MIT License. Each folder keeps his license in its `LICENSE` file.
+used under the MIT License. Each folder keeps the license in its `LICENSE` file.
 `review-paper-code` and `explain-diff` are unchanged. `audit-analysis` is changed in two ways: it
 takes optional paths after the base ref, and it passes untracked code files to the auditor.
 
