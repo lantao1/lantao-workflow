@@ -273,7 +273,7 @@ Each skill's own `SKILL.md` says when to use it; `ls .claude/skills` lists them 
 |---|---|
 | Papers and review | `/review-paper`, `/seven-pass-review`, `/respond-to-referees`, `/verify-claims`, `/proofread`, `/humanize`, `/lit-review`, `/validate-bib`, `/submission-disclosures` |
 | Research design | `/interview-me`, `/research-ideation`, `/power-analysis`, `/preregister`, `/grant-proposal`, `/data-management-plan` |
-| Data, estimation and replication | `/data-analysis`, `/stata-replication`, `/did-event-study`, `/simulation-study`, `/diagnose`, `/audit-reproducibility`, `/replication-package`, `/capture-environment`, `/disclosure-check`, `/review-r`, `/r-package-check` |
+| Data, estimation and replication | `/data-analysis`, `/stata-replication`, `/did-event-study`, `/simulation-study`, `/diagnose`, `/audit-reproducibility`, `/audit-analysis`, `/review-paper-code`, `/explain-diff`, `/replication-package`, `/capture-environment`, `/disclosure-check`, `/review-r`, `/r-package-check` |
 | Slides and teaching | `/create-lecture`, `/compile-latex`, `/translate-to-quarto`, `/qa-quarto`, `/deploy`, `/extract-tikz`, `/new-diagram`, `/slide-excellence`, `/visual-audit`, `/pedagogy-review`, `/devils-advocate`, `/syllabus`, `/teach-from-paper`, `/scaffold-exercises`, `/respond-to-eval` |
 | Session and repository | `/commit`, `/checkpoint`, `/compress-session`, `/context-status`, `/learn`, `/promote-memory`, `/deep-audit`, `/permission-check`, `/new-skill`, `/coauthor-brief`, `/triage-inbox` |
 
