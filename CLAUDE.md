@@ -141,7 +141,8 @@ instead: all green, and a build with 0 errors, 0 overfull boxes and 0 undefined 
 ## Skills Quick Reference
 
 - **Writing and review:** `/review-paper` (`--peer`), `/seven-pass-review`, `/respond-to-referees`,
-  `/verify-claims`, `/proofread`, `/humanize`, `/lit-review`, `/validate-bib`
+  `/verify-claims`, `/proofread`, `/humanize` (audit only), `/academic-humanizer` (rewrite),
+  `/lit-review`, `/validate-bib`
 - **Data and replication:** `/data-analysis`, `/stata-replication`, `/did-event-study`, `/diagnose`,
   `/audit-reproducibility`, `/audit-analysis`, `/review-paper-code`, `/explain-diff`,
   `/replication-package`, `/capture-environment`, `/review-r`

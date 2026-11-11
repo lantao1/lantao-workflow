@@ -35,6 +35,15 @@ SOFTWARE.
 
 ---
 
+## Third-party skill: academic-humanizer
+
+`.claude/skills/academic-humanizer/` is a copy of **academic-humanizer** by AIScientists-Dev,
+<https://github.com/AIScientists-Dev/academic-humanizer>, used under the MIT License. Its own
+`LICENSE` file is kept in that folder, as the license requires. It rewrites AI-assisted academic
+prose and grant proposals. The upstream `/humanize` skill only audits and does not rewrite.
+
+---
+
 ## What this copy adds (Lantao Liu's own work)
 
 - **Rules:** `.claude/rules/working-rules.md` (always loaded), `.claude/rules/writing-standard.md`
